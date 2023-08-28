@@ -1,23 +1,26 @@
 # Проект по тестированию элементов сайта "Иви"
 сделано в рамках дипломного проекта для qa.guru
  <p align="center">
-<img title="ivipage" src="images/screenshots/iviMain.png" width="700">
+<img title="ivipage" src="media/screen/iviMain.png" width="700">
 </p>
 > <a target="_blank" href="https://www.ivi.ru">ivi.ru</a>
-> 
-> ## :open_book: Содержание:
-> 
-> - [Технологии и инструменты](#gear-технологии-и-инструменты)
-- [Тест кейсы](#heavy_check_mark-Тест-кейсы)
-- [Запуск тестов](#computer-запуск-тестов-из-терминала)
-- [Примеры использования](#примеры-использования)
-- [Запуск тестов в Jenkins](#-запуск-тестов-из-jenkins)
-- [Отчет о результатах тестирования в Allure Report](#-отчет-о-результатах-тестирования-в-Allure-report)
-- [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
-- [Уведомления в Telegram](#-уведомления-в-telegram)
-- [Видео прохождения тестов](#movie_camera-видео-с-прогоном-тестов)
+ 
 
+
+<a name="Ссылка"></a>
+## Оглавление
+
+- <a href="#tools">Использованный стек технологий</a>
+- <a href="#list">Список проверок</a>
+- <a href="#jenkins">Запуск тестов в Jenkins</a>
+- <a href="#allure">Результаты запуска тестов в Allure</a>
+- <a href="#testops">Интеграция с Allure TestOps</a>
+- <a href="#jira">Интеграция с Jira</a>
+- <a href="#tg">Отчет о результатах в Telegram-боте</a>
+- <a href="#vid">Видео-пример запуска тестов</a>  
+ 
 <p align="left">
+<a id="tools"></a>
 <a href="https://www.jetbrains.com/idea/"><img src="media/logo/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA" title="IntelliJ IDEA"/></a>
 <a href="https://www.java.com/"><img src="media/logo/Java.svg" width="50" height="50" alt="Java" title="Java"/></a>
 <a href="https://github.com/"><img src="media/logo/GitHub.svg" width="50" height="50" alt="Github" title="GitHub"/></a>
@@ -29,6 +32,7 @@
 <a href="https://www.jenkins.io/"><img src="media/logo/Jenkins.svg" width="50" height="50" alt="Jenkins" title="Jenkins"/></a>
 <a href="https://web.telegram.org/"><img src="media\logo\Telegram.svg" width="50" height="50" alt="Telegram" title="Telegram"></a>
 <a href="https://qameta.io/"><img src="media\logo\Allure_TO.svg" width="50" height="50" alt="Allure_TO" title="Allure_TO"></a>
+<a href="https://www.atlassian.com/software/jira"><img src="media\logo\Jira.svg" width="50" height="50" alt="Jira" title="Jira"></a>
 </p>
 
 Для написания проектов использовался язык **Java**  и фреймворк тестирования **Selenide**. Среда сборки **IntelliJ IDEA** сочетается с **Gradle**.
@@ -36,6 +40,7 @@
 
 **Allure Report**, **AllureTestOps** и **Telegram Bot** использованы для визуализации результатов проверок.
 
+<a id="list"></a>
 ## :heavy_check_mark: Тест кейсы
 - Проверка на присутствие в маркетах приложений приложения Иви
 - Проверка проставления рейтинга фильмов
@@ -45,30 +50,46 @@
 - Проверка возможности поделиться фильмом в соцсети
 - Проверка сортировки фильмов по годам
 
-
-###  Основной отчет
+<a id="allure"></a>
+## <img src="media/logo/Allure_Report.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://allure.autotests.cloud">Allure Report</a>
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/allureSteps.PNG">
+<img title="Allure Overview Dashboard" src="media/screen/allureSteps.PNG">
 </p>
-> Отчет позволяет посмотреть шаги выполнения теста и их код 
+> Отчет позволяет посмотреть шаги выполнения теста  
 
-## <img src="images/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://allure.autotests.cloud/launch/15301">Allure TestOps</a>
+<a id="jenkins"></a>
+## <img src="media/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud">Jenkins</a>
+<img title="Jenkins" src="media/screen/jenkinsScreen.PNG">
 <p align="center">
-<img title="Allure Overview1" src="images/screens/testOpsScreen01.PNG" width="700">
-</p>
->Интеграция с TestOps позволяет выборочно или поточно запускать тесты
+
+
+<a id="testops"></a>
+## <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://allure.autotests.cloud">Allure TestOps</a>
 <p align="center">
-<img title="Allure Overview2" src="images/screens/testOpsScreen02.PNG" width="700">
+<img title="Allure Overview1" src="media/screen/testOpsScreen01.PNG" width="700">
+</p>
+> Интеграция с TestOps позволяет выборочно или поточно запускать тесты
+<p align="center">
+<img title="Allure Overview2" src="media/screen/testOpsScreen02.PNG" width="700">
 </p>
 
 
-## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
+<a id="jira"></a>
+## <img src="media/logo/Jira.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://www.atlassian.com/software/jira">Jira</a>
+<p align="center">
+<img title="Allure Overview2" src="media/screen/jiraScreen1.png" width="700">
+</p>
+
+ 
+## <img src="media/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
 > После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне.
+<a id="tg"></a>
 <p align="center">
-<img title="Telega" src="images/screens/telegramReport.PNG" >
+<img title="Telega" src="media/screen/telegramReport.jpg" width ="300" >
 </p>
-
+ 
 > Видео к прохождению теста "Добавление игры в корзину".
+<a id="vid"></a>
 <p align="center">
-  <img title="Selenoid Video" src="media/video/appLinkscheckVideo.mp4">
+  <img title="Selenoid Video" src="media/video/videogif.gif">
 </p>
