@@ -24,7 +24,7 @@
 <a href="https://www.jetbrains.com/idea/"><img src="media/logo/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA" title="IntelliJ IDEA"/></a>
 <a href="https://www.java.com/"><img src="media/logo/Java.svg" width="50" height="50" alt="Java" title="Java"/></a>
 <a href="https://github.com/"><img src="media/logo/GitHub.svg" width="50" height="50" alt="Github" title="GitHub"/></a>
-<a href="https://junit.org/junit5/"><img src="media/logo/JUnit5.svg" width="50" height="50" alt="JUnit 5" title="JUnit 5"/></a>
+<a href="https://junit.org/junit5/"><img src="media\logo\JUnit5.svg" width="50" height="50" alt="JUnit 5" title="JUnit 5"/></a>
 <a href="https://gradle.org/"><img src="media/logo/Gradle.svg" width="50" height="50" alt="Gradle" title="Gradle"/></a>
 <a href="https://selenide.org/"><img src="media/logo/Selenide.svg" width="50" height="50" alt="Selenide" title="Selenide"/></a>
 <a href="https://aerokube.com/selenoid/"><img src="media/logo/Selenoid.svg" width="50" height="50" alt="Selenoid" title="Selenoid"/></a>
@@ -55,19 +55,22 @@
 <p align="center">
 <img title="Allure Overview Dashboard" src="media/screen/allureSteps.PNG">
 </p>
-> Отчет позволяет посмотреть шаги выполнения теста  
+
+> Отчет позволяет детально посмотреть шаги выполнения тестов   
 
 <a id="jenkins"></a>
-## <img src="media/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud">Jenkins</a>
-<img title="Jenkins" src="media/screen/jenkinsScreen.PNG">
+## <img src="media/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Задача в <a target="_blank" href="https://jenkins.autotests.cloud">Jenkins</a>
 <p align="center">
+<img title="Jenkins" src="media/screen/jenkinsScreen1.PNG"> </p> 
 
+> Jenkins позволяет сделать тест параметризованным, выбрать нужный браузер, разрешение
 
 <a id="testops"></a>
 ## <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://allure.autotests.cloud">Allure TestOps</a>
 <p align="center">
 <img title="Allure Overview1" src="media/screen/testOpsScreen01.PNG" width="700">
 </p>
+
 > Интеграция с TestOps позволяет выборочно или поточно запускать тесты
 <p align="center">
 <img title="Allure Overview2" src="media/screen/testOpsScreen02.PNG" width="700">
@@ -77,8 +80,10 @@
 <a id="jira"></a>
 ## <img src="media/logo/Jira.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://www.atlassian.com/software/jira">Jira</a>
 <p align="center">
-<img title="Allure Overview2" src="media/screen/jiraScreen1.png" width="700">
+<img title="Jira" src="media/screen/jiraScreen1.png" width="700">
 </p>
+
+> Тест-кейсы и результаты прогонов можно прикреплять к задачам в Jira 
 
  
 ## <img src="media/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
@@ -88,7 +93,7 @@
 <img title="Telega" src="media/screen/telegramReport.jpg" width ="300" >
 </p>
  
-> Видео к прохождению теста "Добавление игры в корзину".
+> Видео к прохождению теста "Проверка на присутствие в маркетах приложения Иви".
 <a id="vid"></a>
 <p align="center">
   <img title="Selenoid Video" src="media/video/videogif.gif">
