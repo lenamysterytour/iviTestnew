@@ -62,7 +62,7 @@
 ## <img src="media/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Задача в <a target="_blank" href="https://jenkins.autotests.cloud">Jenkins</a>
 <p align="center">
 <a id="jenkins"></a>
-<img title="Jenkins" src="media/screen/jenkinsScreen1.PNG"> </p> 
+<img title="Jenkins" src="media/screen/jenkinsScreen1.png"> </p> 
 
 > Jenkins позволяет сделать тест параметризованным, выбрать нужный браузер, разрешение
 
@@ -70,12 +70,12 @@
 ## <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://allure.autotests.cloud">Allure TestOps</a>
 <p align="center">
 <a id="testops"></a>
-<img title="Allure Overview1" src="media/screen/testOpsScreen01.PNG" width="700">
+<img title="Allure Overview1" src="media/screen/testOpsScreen01.png" width="700">
 </p>
 
 > Интеграция с TestOps позволяет выборочно или поточно запускать тесты
 <p align="center">
-<img title="Allure Overview2" src="media/screen/testOpsScreen02.PNG" width="700">
+<img title="Allure Overview2" src="media/screen/testOpsScreen02.png" width="700">
 </p>
 
 
