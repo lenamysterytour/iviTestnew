@@ -1,6 +1,8 @@
 package demo.qa;
 
 import com.github.javafaker.Faker;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.RegisterPages;
@@ -8,21 +10,26 @@ import utils.RemoteTestBase;
 
 
 import static com.codeborne.selenide.logevents.SelenideLogger.step;
+import static io.qameta.allure.SeverityLevel.CRITICAL;
 
+@Owner("ebolotnikova")
 public class RegisterTest extends RemoteTestBase {
 
     @Test
+    @Severity(CRITICAL)
     @Tag("initialRegister")
     public void initialRegisterTest() {
 
         RegisterPages registerPages = new RegisterPages();
+        RemoteTestBase remoteTestBase = new RemoteTestBase();
         Faker faker = new Faker();
 
         String fakeEmail = faker.internet().emailAddress(),
                 fakepassword = faker.internet().password();
 
         step("Open page", () -> {
-            registerPages.openPage()
+            remoteTestBase.openPage();
+            registerPages
                     .clickLoginAndRegister();
         });
         step("Fill in inputs", () -> {
@@ -40,16 +47,19 @@ public class RegisterTest extends RemoteTestBase {
     }
 
     @Test
+    @Severity(CRITICAL)
     @Tag("initialRegister")
     public void initialRegisterEmailWithNoAtSignTest() {
 
         RegisterPages registerPages = new RegisterPages();
+        RemoteTestBase remoteTestBase = new RemoteTestBase();
         Faker faker = new Faker();
 
         String fakeBadEmail = faker.letterify("######" + ".com");
 
         step("Open page", () -> {
-            registerPages.openPage()
+            remoteTestBase.openPage();
+            registerPages
                     .clickLoginAndRegister();
         });
         step("Fill in inputs, email with no At sign", () -> {

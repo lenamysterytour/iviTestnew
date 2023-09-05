@@ -11,13 +11,8 @@
 ## Оглавление
 
 - <a href="#tools">Использованный стек технологий</a>
-- <a href="#list">Список проверок</a>
-- <a href="#jenkins">Запуск тестов в Jenkins</a>
-- <a href="#allure">Результаты запуска тестов в Allure</a>
-- <a href="#testops">Интеграция с Allure TestOps</a>
-- <a href="#jira">Интеграция с Jira</a>
-- <a href="#tg">Отчет о результатах в Telegram-боте</a>
-- <a href="#vid">Видео-пример запуска тестов</a>  
+- <a href="#list">Список проверок</a> 
+- <a href="#allure">Результаты запуска тестов в Allure</a> 
  
 <p align="left">
 <a id="tools"></a>

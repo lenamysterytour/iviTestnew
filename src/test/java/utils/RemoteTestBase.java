@@ -8,9 +8,13 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import pages.RatePages;
 
 
 import java.util.Map;
+
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class RemoteTestBase {
 
@@ -40,5 +44,12 @@ public class RemoteTestBase {
         Attach.browserConsoleLogs();
         Attach.addVideo();
         Selenide.closeWebDriver();
+    }
+
+
+    public RemoteTestBase openPage() {
+        open("/");
+        $("[data-test='close-teaser-button']").click();
+        return this;
     }
 }
