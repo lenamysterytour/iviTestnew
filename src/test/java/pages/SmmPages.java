@@ -16,20 +16,14 @@ public class SmmPages {
 
     private final SelenideElement shareWindow = $(".socialShareModal");
 
-    private final SelenideElement telegramLink =  $(byAttribute("src", "https://solea-parent.dfs.ivi.ru/picture/a5a1b2,a5a1b2/social_telegram.svg"));
+    private final SelenideElement telegramLink = $(byAttribute("src", "https://solea-parent.dfs.ivi.ru/picture/a5a1b2,a5a1b2/social_telegram.svg"));
 
-    private final SelenideElement telegramShareWindow =  $(".tgme_page");
+    private final SelenideElement telegramShareWindow = $(".tgme_page");
 
     private final SelenideElement movieLink = $(withText("https://www.ivi.tv/watch/"));
 
     private final SelenideElement telegramShareButton = $(".tgme_action_button_new");
 
-
-
-    public SmmPages openPage(){
-        open("/");
-        $("[data-test='close-teaser-button']").click();
-        return this;}
 
     public SmmPages clickOnMoviePoster() {
         posterImage.click();
@@ -41,7 +35,7 @@ public class SmmPages {
         return this;
     }
 
-    public SmmPages telegramTextPresenceCheck (String value) {
+    public SmmPages telegramTextPresenceCheck(String value) {
         shareWindow.shouldHave(text(value));
         return this;
     }
@@ -51,22 +45,20 @@ public class SmmPages {
         return this;
     }
 
-    public SmmPages smmWindowCheck () {
+    public SmmPages smmWindowCheck() {
         telegramShareWindow.should(appear);
         return this;
     }
 
-    public SmmPages movieLinkCheck () {
+    public SmmPages movieLinkCheck() {
         movieLink.should(appear);
         return this;
     }
 
-    public SmmPages shareButtonCheck () {
+    public SmmPages shareButtonCheck() {
         telegramShareButton.should(appear);
         return this;
     }
-
-
 
 
 }

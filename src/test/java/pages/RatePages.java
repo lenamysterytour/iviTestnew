@@ -19,16 +19,11 @@ public class RatePages {
     private final SelenideElement ratingSuccessIcon = $(".movie-rating__icon-success");
 
 
-    public RatePages openPage() {
-        open("/");
-        $("[data-test='close-teaser-button']").click();
-        return this;
-    }
-
     public RatePages clickOnMoviePoster() {
         posterImage.click();
         return this;
     }
+
     public RatePages clickOnRateButton() {
         rateButton.click();
         return this;

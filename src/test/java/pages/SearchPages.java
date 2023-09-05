@@ -10,18 +10,13 @@ import static com.codeborne.selenide.Selenide.open;
 public class SearchPages {
 
     private final SelenideElement searchBar = $(".headerTop__headerSearch");
-    private final SelenideElement   searchInput = $("[data-test='search_input']");
+    private final SelenideElement searchInput = $("[data-test='search_input']");
     private final SelenideElement searchResult = $(".searchBlock__content");
 
 
-    public SearchPages openPage(){
-        open("/");
-        $("[data-test='close-teaser-button']").click();
-        return this;}
-
     public SearchPages typeInTitle(String value) {
         searchInput.setValue(value).pressEnter();
-return this;
+        return this;
     }
 
     public SearchPages clickSearchBar() {
@@ -30,7 +25,7 @@ return this;
     }
 
     public SearchPages confirmTitle(String value) {
-       searchResult.shouldHave(text(value));
+        searchResult.shouldHave(text(value));
         return this;
     }
 

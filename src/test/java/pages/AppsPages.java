@@ -4,24 +4,19 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selectors.byAttribute;
 import static com.codeborne.selenide.Selenide.*;
+
 public class AppsPages {
 
-    private final SelenideElement  appleApplink = $(byAttribute("href", "https://go.onelink.me/app/devicesiOS"));
+    private final SelenideElement appleApplink = $(byAttribute("href", "https://go.onelink.me/app/devicesiOS"));
     private final SelenideElement androidAppLink = $(byAttribute("href", "https://go.onelink.me/app/devicesAndroid"));
 
 
-    public AppsPages openPage() {
-        open("/");
-        $("[data-test='close-teaser-button']").click();
-        return this;
-    }
-
-    public AppsPages chooseIoslink () {
+    public AppsPages chooseIoslink() {
         appleApplink.click();
         return this;
     }
 
-    public AppsPages chooseAndroidlink () {
+    public AppsPages chooseAndroidlink() {
         androidAppLink.click();
         return this;
     }

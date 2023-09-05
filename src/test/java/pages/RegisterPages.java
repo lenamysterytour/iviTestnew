@@ -19,13 +19,6 @@ public class RegisterPages {
     private final SelenideElement errorMessage = $("[data-test='chat_error']");
 
 
-    public RegisterPages openPage() {
-        open("/");
-        $("[data-test='close-teaser-button']").click();
-        return this;
-    }
-
-
     public RegisterPages clickLoginAndRegister() {
         loginButton.hover();
         loginOrRegisterLink.click();

@@ -18,13 +18,6 @@ public class YearPages {
     private final SelenideElement cardContent = $(".contentCard__info").$(withText("2023"));
 
 
-
-    public YearPages openPage() {
-        open("/");
-        $("[data-test='close-teaser-button']").click();
-        return this;
-    }
-
     public YearPages findFilmsLink() {
         menuFilmLink.hover();
         return this;
