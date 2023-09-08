@@ -1,7 +1,8 @@
-package demo.qa;
+package tests;
 
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.SmmPages;
@@ -19,6 +20,7 @@ public class ShareInSocialMediaTest extends RemoteTestBase {
 
     @Test
     @Severity(NORMAL)
+    @DisplayName("Share in Social media test")
     @Tag("shareTelegram")
     public void shareInSocialMedia() {
 

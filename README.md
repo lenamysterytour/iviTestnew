@@ -11,9 +11,14 @@
 ## Оглавление
 
 - <a href="#tools">Использованный стек технологий</a>
-- <a href="#list">Список проверок</a> 
-- <a href="#allure">Результаты запуска тестов в Allure</a> 
- 
+- <a href="#list">Список проверок</a>
+- <a href="#jenkins">Удаленный запуск через Jenkins</a>
+- <a href="#allure">Результаты запуска тестов в Allure Report</a>
+- <a href="#testops">Интеграция с Allure TestOps</a> 
+- <a href="#jira">Интеграция с Jira</a>
+- <a href="#tg">Результаты запуска тестов в Telegram-боте</a>
+- <a href="#vic">Видео одной из проверок</a>
+
 <p align="left">
 <a id="tools"></a>
 <a href="https://www.jetbrains.com/idea/"><img src="media/logo/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA" title="IntelliJ IDEA"/></a>
@@ -45,39 +50,41 @@
 - Проверка возможности поделиться фильмом в соцсети
 - Проверка сортировки фильмов по годам
 
-<a id="allure"></a>
-## <img src="media/logo/Allure_Report.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://allure.autotests.cloud">Allure Report</a>
-<p align="center">
-<img title="Allure Overview Dashboard" src="media/screen/allureSteps.PNG">
-</p>
-
-> Отчет позволяет детально посмотреть шаги выполнения тестов   
+ 
 
  
-## <img src="media/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Задача в <a target="_blank" href="https://jenkins.autotests.cloud">Jenkins</a>
+## <img src="media/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Задача в <a target="_blank" href="https://jenkins.autotests.cloud/job/project-ivi-eb-try1/">Jenkins</a>
 <p align="center">
 <a id="jenkins"></a>
 <img title="Jenkins" src="media/screen/jenkinsScreen1.png"> </p> 
 
 > Jenkins позволяет сделать тест параметризованным, выбрать нужный браузер, разрешение
 
+<a id="allure"></a>
+## <img src="media/logo/Allure_Report.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/project-ivi-eb-try1/15/allure/">Allure Report</a>
+<p align="center">
+<img title="Allure Overview" src="media/screen/allureSteps.PNG">
+</p>
+
+> Отчет позволяет детально посмотреть шаги выполнения тестов
+
  
-## <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://allure.autotests.cloud">Allure TestOps</a>
+## <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://allure.autotests.cloud/launch/29495">Allure TestOps</a>
 <p align="center">
 <a id="testops"></a>
-<img title="Allure Overview1" src="media/screen/testOpsScreen01.png" width="700">
+<img title="Allure Overview1" src="media/screen/testOpsScreen001.png">
 </p>
 
 > Интеграция с TestOps позволяет выборочно или поточно запускать тесты
 <p align="center">
-<img title="Allure Overview2" src="media/screen/testOpsScreen02.png" width="700">
+<img title="Allure Overview2" src="media/screen/testOpsScreen02.png">
 </p>
 
 
 <a id="jira"></a>
-## <img src="media/logo/Jira.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://www.atlassian.com/software/jira">Jira</a>
+## <img src="media/logo/Jira.svg" width="25" height="25"  alt="Jira"/></a> Отчет в <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-857">Jira</a>
 <p align="center">
-<img title="Jira" src="media/screen/jiraScreen1.png" width="700">
+<img title="Jira" src="media/screen/jiraScreen01.png">
 </p>
 
 > Тест-кейсы и результаты прогонов можно прикреплять к задачам в Jira 
@@ -87,7 +94,7 @@
 > После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне.
 <a id="tg"></a>
 <p align="center">
-<img title="Telega" src="media/screen/telegramReport.jpg" width ="300" >
+<img title="Telega" src="media/screen/telegramScreen.jpg" width ="300" >
 </p>
  
 > Видео к прохождению теста "Проверка на присутствие в маркетах приложения Иви".

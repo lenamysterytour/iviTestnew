@@ -1,5 +1,6 @@
 package utils;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -8,7 +9,6 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import pages.RatePages;
 
 
 import java.util.Map;
@@ -29,7 +29,7 @@ public class RemoteTestBase {
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("selenoid:options", Map.<String, Object> of(
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
                 "enableVideo", true
         ));
@@ -49,7 +49,9 @@ public class RemoteTestBase {
 
     public RemoteTestBase openPage() {
         open("/");
-        $("[data-test='close-teaser-button']").click();
+        if ($("[data-test='close-teaser-button']").is(Condition.appear)) {
+            $("[data-test='close-teaser-button']").click();
+        }
         return this;
     }
 }

@@ -1,8 +1,9 @@
-package demo.qa;
+package tests;
 
 import com.github.javafaker.Faker;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.RegisterPages;
@@ -17,6 +18,7 @@ public class RegisterTest extends RemoteTestBase {
 
     @Test
     @Severity(CRITICAL)
+    @DisplayName("Initial register test")
     @Tag("initialRegister")
     public void initialRegisterTest() {
 
@@ -48,6 +50,7 @@ public class RegisterTest extends RemoteTestBase {
 
     @Test
     @Severity(CRITICAL)
+    @DisplayName("Initial register with bad email")
     @Tag("initialRegister")
     public void initialRegisterEmailWithNoAtSignTest() {
 

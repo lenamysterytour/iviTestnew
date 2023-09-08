@@ -6,6 +6,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import com.codeborne.selenide.Configuration;
 
+
 public class TestBase {
     @BeforeAll
     static void beforeAll() {

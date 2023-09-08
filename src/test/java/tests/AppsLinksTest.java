@@ -1,4 +1,4 @@
-package demo.qa;
+package tests;
 
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;

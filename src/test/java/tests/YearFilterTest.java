@@ -1,7 +1,8 @@
-package demo.qa;
+package tests;
 
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.YearPages;
@@ -16,6 +17,7 @@ public class YearFilterTest extends RemoteTestBase {
     @Test
     @Tag("yearFilter")
     @Severity(NORMAL)
+    @DisplayName("Year filter test")
     public void yearFilter() {
 
         YearPages yearPages = new YearPages();

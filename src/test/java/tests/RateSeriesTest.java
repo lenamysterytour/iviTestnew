@@ -1,7 +1,8 @@
-package demo.qa;
+package tests;
 
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.RatePages;
@@ -19,6 +20,7 @@ public class RateSeriesTest extends RemoteTestBase {
     @Test
     @Tag("rate")
     @Severity(MINOR)
+    @DisplayName("Rate series")
     public void rateSeries() {
 
         step("Open movie page", () -> {

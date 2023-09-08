@@ -1,7 +1,8 @@
-package demo.qa;
+package tests;
 
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.SearchPages;
@@ -20,6 +21,7 @@ public class SearchTitleTest extends RemoteTestBase {
 
     @Test
     @Severity(NORMAL)
+    @DisplayName("Search Title test")
     @Tag("searchTest")
     public void searchTitle() {
 
