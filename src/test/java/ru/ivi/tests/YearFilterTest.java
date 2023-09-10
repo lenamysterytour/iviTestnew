@@ -1,12 +1,12 @@
-package tests;
+package ru.ivi.tests;
 
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import pages.YearPages;
-import utils.RemoteTestBase;
+import ru.ivi.pages.YearPages;
+import ru.ivi.utils.RemoteTestBase;
 
 import static com.codeborne.selenide.logevents.SelenideLogger.step;
 import static io.qameta.allure.SeverityLevel.NORMAL;

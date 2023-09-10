@@ -1,20 +1,22 @@
 # Проект по тестированию элементов сайта "Иви"
+
 сделано в рамках дипломного проекта для qa.guru
  <p align="center">
 <img title="ivipage" src="media/screen/iviMain.png" width="700">
 </p>
 > <a target="_blank" href="https://www.ivi.ru">ivi.ru</a>
- 
+
 
 
 <a name="Ссылка"></a>
+
 ## Оглавление
 
 - <a href="#tools">Использованный стек технологий</a>
 - <a href="#list">Список проверок</a>
 - <a href="#jenkins">Удаленный запуск через Jenkins</a>
 - <a href="#allure">Результаты запуска тестов в Allure Report</a>
-- <a href="#testops">Интеграция с Allure TestOps</a> 
+- <a href="#testops">Интеграция с Allure TestOps</a>
 - <a href="#jira">Интеграция с Jira</a>
 - <a href="#tg">Результаты запуска тестов в Telegram-боте</a>
 - <a href="#vic">Видео одной из проверок</a>
@@ -35,70 +37,77 @@
 <a href="https://www.atlassian.com/software/jira"><img src="media\logo\Jira.svg" width="50" height="50" alt="Jira" title="Jira"></a>
 </p>
 
-Для написания проектов использовался язык **Java**  и фреймворк тестирования **Selenide**. Среда сборки **IntelliJ IDEA** сочетается с **Gradle**.
-**JUnit5** - фреймворк модульного тестирования. Запуск тестов выполняется из **Jenkins**. **Selenoid** используется для запуска браузеров в контейнерах **Docker**.
+Для написания проектов использовался язык **Java**  и фреймворк тестирования **Selenide**. Среда сборки **IntelliJ IDEA
+** сочетается с **Gradle**.
+**JUnit5** - фреймворк модульного тестирования. Запуск тестов выполняется из **Jenkins**. **Selenoid** используется для
+запуска браузеров в контейнерах **Docker**.
 
 **Allure Report**, **AllureTestOps** и **Telegram Bot** использованы для визуализации результатов проверок.
 
 <a id="list"></a>
+
 ## :heavy_check_mark: Тест кейсы
+
 - Проверка на присутствие в маркетах приложений приложения Иви
 - Проверка проставления рейтинга фильмов
-- Проверка на регистрацию пользователя 
+- Проверка на регистрацию пользователя
 - Проверка на регистрацию пользователя с неверным форматом email
 - Проверка на поиск фильмов по заголовкам
 - Проверка возможности поделиться фильмом в соцсети
 - Проверка сортировки фильмов по годам
 
- 
-
- 
 ## <img src="media/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Задача в <a target="_blank" href="https://jenkins.autotests.cloud/job/project-ivi-eb-try1/">Jenkins</a>
+
 <p align="center">
 <a id="jenkins"></a>
-<img title="Jenkins" src="media/screen/jenkinsScreen1.png"> </p> 
+<img title="Jenkins" alt="Jenkins" src="media/screen/jenkinsScreen1.png"> </p> 
 
 > Jenkins позволяет сделать тест параметризованным, выбрать нужный браузер, разрешение
 
 <a id="allure"></a>
+
 ## <img src="media/logo/Allure_Report.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/project-ivi-eb-try1/15/allure/">Allure Report</a>
+
 <p align="center">
-<img title="Allure Overview" src="media/screen/allureSteps.PNG">
+<img title="Allure Overview" alt="allure" src="media/screen/allureSteps.PNG">
 </p>
 
 > Отчет позволяет детально посмотреть шаги выполнения тестов
 
- 
 ## <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://allure.autotests.cloud/launch/29495">Allure TestOps</a>
+
 <p align="center">
 <a id="testops"></a>
-<img title="Allure Overview1" src="media/screen/testOpsScreen001.png">
+<img title="Allure Overview1" alt="allure" src="media/screen/testOpsScreen001.PNG">
 </p>
 
 > Интеграция с TestOps позволяет выборочно или поточно запускать тесты
 <p align="center">
-<img title="Allure Overview2" src="media/screen/testOpsScreen02.png">
+<img title="Allure Overview2" alt="testops" src="media/screen/testOpsScreen02.PNG">
 </p>
 
 
 <a id="jira"></a>
+
 ## <img src="media/logo/Jira.svg" width="25" height="25"  alt="Jira"/></a> Отчет в <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-857">Jira</a>
+
 <p align="center">
-<img title="Jira" src="media/screen/jiraScreen01.png">
+<img title="Jira" alt="Jira" src="media/screen/jiraScreen01.PNG">
 </p>
 
-> Тест-кейсы и результаты прогонов можно прикреплять к задачам в Jira 
+> Тест-кейсы и результаты прогонов можно прикреплять к задачам в Jira
 
- 
 ## <img src="media/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
-> После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне.
+
+> После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет
+> сообщение с отчетом о прогоне.
 <a id="tg"></a>
 <p align="center">
-<img title="Telega" src="media/screen/telegramScreen.jpg" width ="300" >
+<img title="Telega" alt="Telega" src="media/screen/telegramScreen.jpg" width ="300" >
 </p>
- 
-> Видео к прохождению теста "Проверка на присутствие в маркетах приложения Иви".
+
+> Видео к прохождению теста "Проверка на присутствие в маркетах приложения Иви" на Selenoid
 <a id="vid"></a>
 <p align="center">
-  <img title="Selenoid Video" src="media/video/videogif.gif">
+  <img title="Selenoid Video" alt="vid" src="media/video/videogif.gif">
 </p>

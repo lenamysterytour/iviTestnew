@@ -1,17 +1,15 @@
-package pages;
+package ru.ivi.pages;
 
 import com.codeborne.selenide.SelenideElement;
 
-import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
 
 public class SearchPages {
 
-    private final SelenideElement searchBar = $(".headerTop__headerSearch");
-    private final SelenideElement searchInput = $("[data-test='search_input']");
-    private final SelenideElement searchResult = $(".searchBlock__content");
+    private final SelenideElement searchBar = $(".headerTop__headerSearch"),
+            searchInput = $("[data-test='search_input']"),
+            searchResult = $(".searchBlock__content");
 
 
     public SearchPages typeInTitle(String value) {

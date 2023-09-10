@@ -1,4 +1,4 @@
-package utils;
+package ru.ivi.utils;
 
 import com.github.javafaker.Faker;
 public class FakerPage {

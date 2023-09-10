@@ -1,4 +1,4 @@
-package pages;
+package ru.ivi.pages;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -9,13 +9,13 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class YearPages {
 
-    private final SelenideElement menuFilmLink = $(".headerMenu__listItem").sibling(1);
+    private final SelenideElement menuFilmLink = $(".headerMenu__listItem").sibling(1),
 
-    private final SelenideElement films2023Link = $(byLinkText("Фильмы 2023 года"));
+    films2023Link = $(byLinkText("Фильмы 2023 года")),
 
-    private final SelenideElement postersImage = $(".gallery__item").sibling(0);
+    postersImage = $(".gallery__item").sibling(0),
 
-    private final SelenideElement cardContent = $(".contentCard__info").$(withText("2023"));
+    cardContent = $(".contentCard__info").$(withText("2023"));
 
 
     public YearPages findFilmsLink() {

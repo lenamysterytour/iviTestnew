@@ -1,4 +1,4 @@
-package pages;
+package ru.ivi.pages;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -7,22 +7,22 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byAttribute;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
 
 public class SmmPages {
 
-    private final SelenideElement posterImage = $(".ivi-carousel");
-    private final SelenideElement shareButton = $(".userButtons__item_share");
+    private final SelenideElement posterImage = $(".ivi-carousel"),
 
-    private final SelenideElement shareWindow = $(".socialShareModal");
+    shareButton = $(".userButtons__item_share"),
 
-    private final SelenideElement telegramLink = $(byAttribute("src", "https://solea-parent.dfs.ivi.ru/picture/a5a1b2,a5a1b2/social_telegram.svg"));
+    shareWindow = $(".socialShareModal"),
 
-    private final SelenideElement telegramShareWindow = $(".tgme_page");
+    telegramLink = $(byAttribute("src", "https://solea-parent.dfs.ivi.ru/picture/a5a1b2,a5a1b2/social_telegram.svg")),
 
-    private final SelenideElement movieLink = $(withText("https://www.ivi.tv/watch/"));
+    telegramShareWindow = $(".tgme_page"),
 
-    private final SelenideElement telegramShareButton = $(".tgme_action_button_new");
+    movieLink = $(withText("https://www.ivi.tv/watch/")),
+
+    telegramShareButton = $(".tgme_action_button_new");
 
 
     public SmmPages clickOnMoviePoster() {
