@@ -78,12 +78,12 @@
 
 <p align="center">
 <a id="testops"></a>
-<img title="Allure Overview1" alt="allure" src="media/screen/testOpsScreen001.PNG">
+<img title="Allure Overview1" alt="Allure" src="media/screen/testOpsScreen001.PNG">
 </p>
 
 > Интеграция с TestOps позволяет выборочно или поточно запускать тесты
 <p align="center">
-<img title="Allure Overview2" alt="testops" src="media/screen/testOpsScreen02.PNG">
+<img title="Allure Overview2" alt="testOps" src="media/screen/testOpsScreen02.PNG">
 </p>
 
 
