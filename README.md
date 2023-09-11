@@ -74,6 +74,12 @@
 
 > Отчет позволяет детально посмотреть шаги выполнения тестов
 
+<p align="center">
+<img title="Allure Overview" alt="allure" src="media/screen/allureAttach.PNG">
+</p>
+
+> Также отчет предоставляет вложение с последним скриншотом, кодом страницы, логами и видео, фиксирующим ход выполнения теста.
+
 ## <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://allure.autotests.cloud/launch/29495">Allure TestOps</a>
 
 <p align="center">
