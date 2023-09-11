@@ -2,7 +2,7 @@
 
 сделано в рамках дипломного проекта для qa.guru
  <p align="center">
-<img title="ivipage" src="media/screen/iviMain.png" width="700">
+<img title="ivipage" alt="frontpage" src="media/screen/iviMain.png" width="700">
 </p>
 > <a target="_blank" href="https://www.ivi.ru">ivi.ru</a>
 
@@ -66,7 +66,7 @@
 
 <a id="allure"></a>
 
-## <img src="media/logo/Allure_Report.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/project-ivi-eb-try1/15/allure/">Allure Report</a>
+## <img src="media/logo/Allure_Report.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/project-ivi-eb-try1/allure/">Allure Report</a>
 
 <p align="center">
 <img title="Allure Overview" alt="allure" src="media/screen/allureSteps.PNG">
